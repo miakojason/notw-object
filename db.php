@@ -179,14 +179,14 @@ function q($sql){
     // 並以 fetchAll 方法取得所有結果的關聯陣列形式
     return $this->pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 }
-
+}
 function dd($array){
     echo "<pre>";
     print_r($array);
     echo "</pre>";
 }
 
-}
+
 $student = new DB('students');
 // $rows = $student->q("select * from `students`");
 $rows = $student->count();
